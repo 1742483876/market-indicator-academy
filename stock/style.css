@@ -1,0 +1,63 @@
+:root{--bg:#f7f7f5;--card:#fff;--text:#1f2328;--sub:#6b7280;--line:#e5e7eb;--brand:#2f7fd8;--up:#e5484d;--dn:#1a9e55}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+a{color:var(--brand);text-decoration:none}
+.top{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);display:flex;align-items:center;gap:12px;padding:8px 14px}
+.logo{font-weight:700;color:var(--text);white-space:nowrap}
+.sbox{position:relative;flex:1;max-width:620px}
+#q{width:100%;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--text);font-size:15px;outline:none}
+#q:focus{border-color:var(--brand)}
+.sug{position:absolute;top:44px;left:0;right:0;background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.12);display:none;max-height:60vh;overflow:auto}
+.sug a{display:flex;justify-content:space-between;gap:8px;padding:9px 14px;color:var(--text);border-bottom:1px solid var(--line)}
+.sug a:last-child{border:0}.sug a:hover,.sug a.on{background:var(--bg)}
+.sug .m{color:var(--sub);font-size:12px;white-space:nowrap}
+.wrap{max-width:1020px;margin:0 auto;padding:14px 14px 60px}
+h1{font-size:22px;margin:4px 0}h2{font-size:17px;margin:22px 0 8px}
+.muted{color:var(--sub);font-size:13px}.small{font-size:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.chip{padding:5px 12px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--text);font-size:14px;cursor:pointer}
+.chip:hover{border-color:var(--brand)}
+.hero{padding:26px 0 6px}.hero p{margin:4px 0}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:10px}
+.head{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 16px}
+.price{font-size:30px;font-weight:700}.up{color:var(--up)}.dn{color:var(--dn)}
+.facts{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:var(--sub);margin-top:4px}.facts b{color:var(--text);font-weight:600}
+.verdict{border-left:6px solid var(--sub)}.verdict.buy{border-left-color:var(--up)}.verdict.sell{border-left-color:var(--dn)}.verdict.wait{border-left-color:#e8a317}
+.vt{font-size:22px;font-weight:700}.verdict.buy .vt{color:var(--up)}.verdict.sell .vt{color:var(--dn)}.verdict.wait .vt{color:#c98a00}
+.vr{margin:6px 0}.va{background:var(--bg);border-radius:8px;padding:8px 12px;margin:8px 0;font-size:14px}
+.gbars{display:grid;grid-template-columns:72px 1fr 40px;gap:4px 10px;align-items:center;font-size:13px;margin-top:8px}
+.gbar{height:10px;background:var(--bg);border-radius:6px;position:relative;overflow:hidden}
+.gbar i{position:absolute;top:0;bottom:0}.gbar .mid{position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--sub);opacity:.5}
+.tag{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;background:var(--bg);color:var(--sub);margin-left:6px}
+.tag.buy{background:rgba(229,72,77,.12);color:var(--up)}.tag.sell{background:rgba(26,158,85,.12);color:var(--dn)}
+.chart{width:100%;height:330px}.chart.tall{height:520px}.chart.mid{height:280px}
+.tools{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 6px}
+.tools button{border:1px solid var(--line);background:var(--card);color:var(--sub);border-radius:999px;padding:3px 11px;font-size:13px;cursor:pointer}
+.tools button.on{border-color:var(--brand);color:var(--brand);background:rgba(47,127,216,.08)}
+.tablewrap{overflow-x:auto}
+.tbl{border-collapse:collapse;width:100%;font-size:13px}
+.tbl th,.tbl td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+.tbl th{color:var(--sub);font-weight:600;white-space:nowrap}.tbl td.n{white-space:nowrap;text-align:right}
+.tbl .note{color:var(--sub);font-size:12px}
+.kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.kv div{background:var(--bg);border-radius:10px;padding:8px 12px}.kv span{display:block;font-size:12px;color:var(--sub)}.kv b{font-size:17px}
+.btn{border:1px solid var(--brand);background:var(--brand);color:#fff;border-radius:999px;padding:6px 16px;font-size:14px;cursor:pointer}
+.btn:disabled{opacity:.6}
+.loadbox{padding:30px;text-align:center;color:var(--sub)}
+.err{color:var(--up)}
+.disclaimer{font-size:12px;color:var(--sub);margin-top:26px}
+@media (max-width:640px){.price{font-size:26px}.chart{height:300px}.chart.tall{height:460px}.wrap{padding:10px 10px 50px}.vt{font-size:19px}}
+.chip.on{border-color:var(--brand);color:var(--brand)}
+.tbl .note{display:block}
+.toplink{white-space:nowrap;font-size:14px}
+
+/* 与指标学堂统一的顶部导航：电脑一行；手机三行（logo / 导航横滑 / 搜索） */
+.top{flex-wrap:wrap;gap:8px 12px}
+.nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;min-width:0}
+.nav::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;padding:5px 12px;border-radius:999px;color:var(--sub);font-size:14px;flex:none}
+.nav a.on{background:var(--text);color:#fff}
+.nav a:not(.on):hover{background:var(--bg);color:var(--text)}
+.sbox{flex:1 1 260px}
+@media (max-width:760px){.top{padding:6px 10px 8px;gap:4px 8px}.nav{flex-basis:100%;order:2;margin:0 -10px;padding:0 6px}.nav a{padding:5px 9px;font-size:15px}.sbox{order:3;flex-basis:100%;max-width:none}#q{font-size:16px}}

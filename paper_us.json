@@ -1,0 +1,1 @@
+{"mkt":"us","cur":"$","bench_names":["QQQ","SPY"],"updated":"2026-11-14 07:59","init":150000,"open_date":"2026-11-13","equity":150000,"ret":0.0,"cash":150000,"exposure":0.0,"cap":10,"mdd":0,"realized":0,"bench":{"QQQ":0.0,"SPY":0.0},"pos":[],"nav":[{"date":"2026-11-13","nav":"1.0","exposure":"0.0","QQQ":"679.89","SPY":"754.37"}],"trades":[],"closed":[],"pending":[]}
