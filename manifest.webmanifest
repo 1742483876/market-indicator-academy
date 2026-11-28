@@ -1,0 +1,26 @@
+{
+  "name": "小七投研",
+  "short_name": "小七投研",
+  "description": "今日结论 / 今天该做什么 / 今日一票 / 报告 / 个股透视 / 指标学堂",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "background_color": "#f5f6f8",
+  "theme_color": "#ffffff",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "categories": ["finance", "education"],
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ],
+  "shortcuts": [
+    {"name": "今天该做什么", "short_name": "该做什么", "url": "./#/todo", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "今日一票", "short_name": "今日一票", "url": "./#/pick", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "报告", "short_name": "报告", "url": "./#/reports", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]},
+    {"name": "个股透视", "short_name": "个股", "url": "./stock/", "icons": [{"src": "icons/icon-192.png", "sizes": "192x192"}]}
+  ]
+}
